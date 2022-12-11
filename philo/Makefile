@@ -6,7 +6,7 @@
 #    By: miahmadi <miahmadi@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/08 17:26:12 by miahmadi          #+#    #+#              #
-#    Updated: 2022/12/08 17:27:47 by miahmadi         ###   ########.fr        #
+#    Updated: 2022/12/10 20:15:17 by miahmadi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = philo.a
 PROG = philo
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -pthread
 AR = ar rcs
 RM = rm -f
 
