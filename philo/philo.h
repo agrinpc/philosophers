@@ -6,7 +6,7 @@
 /*   By: miahmadi <miahmadi@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 17:19:22 by miahmadi          #+#    #+#             */
-/*   Updated: 2022/12/13 01:42:21 by miahmadi         ###   ########.fr       */
+/*   Updated: 2022/12/17 08:35:50 by miahmadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,9 @@ typedef struct	s_data
 	int				dead;
 	t_fork			*forks;
 	long long		start;
-	pthread_mutex_t	general;
+	pthread_mutex_t	general_mutex;
+	pthread_mutex_t	msg_mutex;
+	void			*philos;
 } 				t_data;
 
 typedef struct	s_philo
