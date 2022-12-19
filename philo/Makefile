@@ -6,7 +6,7 @@
 #    By: miahmadi <miahmadi@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/08 17:26:12 by miahmadi          #+#    #+#              #
-#    Updated: 2022/12/17 07:31:11 by miahmadi         ###   ########.fr        #
+#    Updated: 2022/12/18 04:10:35 by miahmadi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,11 +14,11 @@ NAME = philo.a
 PROG = philo
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -pthread -fsanitize=thread
+CFLAGS = -Wall -Wextra -Werror -pthread
 AR = ar rcs
 RM = rm -f
 
-FILES = main \
+FILES = main utils_1 utils_2 action setup\
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
@@ -44,6 +44,6 @@ clean:
 fclean: clean
 	$(RM) $(PROG) $(NAME)
 
-re: clean all
+re: fclean all
 
 .PHONY: bonus all clean fclean re
