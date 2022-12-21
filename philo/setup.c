@@ -6,7 +6,7 @@
 /*   By: miahmadi <miahmadi@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 03:30:18 by miahmadi          #+#    #+#             */
-/*   Updated: 2022/12/19 14:22:43 by miahmadi         ###   ########.fr       */
+/*   Updated: 2022/12/21 16:02:05 by miahmadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,10 +103,9 @@ int	check_data(int argc, char **argv)
 			<[number_of_times_each_philosopher_must_eat]>\n");
 		return (0);
 	}
-	if (ft_atoi(argv[1]) < 1 || ft_atoi(argv[2]) < 1 \
-		|| ft_atoi(argv[3]) < 1 || ft_atoi(argv[4]) < 1)
+	if (ft_atoi(argv[1]) < 1)
 	{
-		printf("Error: There is no philosophor\n");
+		printf("Error: There is no philosopher\n");
 		return (0);
 	}
 	if (ft_atoi(argv[2]) < 0 || ft_atoi(argv[3]) < 0 || ft_atoi(argv[4]) < 0)
